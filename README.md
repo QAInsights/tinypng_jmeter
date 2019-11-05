@@ -7,13 +7,13 @@ JMeter tool to automate image compression
 You can download my tool from this link. Before you execute the JMeter file, click on Beanshell Sampler and change the folder path in line 1 as shown below.
 
 
-`File folder = new File("C://folderpath//yourimages");
+``File folder = new File("C://folderpath//yourimages");
 File[] files = folder.listFiles();
 int counter = 1;
 for (File file : files) {
     vars.put("file_" + counter, file.getAbsolutePath());
     counter++;
-}`
+}``
 
 
 Now open the HTTP Header Manager item and add the following header.
